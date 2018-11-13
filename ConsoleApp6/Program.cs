@@ -15,6 +15,7 @@ namespace ConsoleApp6
 
                 for (int i = s.Length - 1; i >= 0; i--)
                 {
+                if(char.IsLetterOrDigit(s[i]))
                     tmp += s[i].ToString();
                 }
 
@@ -23,7 +24,7 @@ namespace ConsoleApp6
 
             static void Main(string[] args)
             {
-                Console.WriteLine(ReverseString("Vincent"));
+                Console.WriteLine(ReverseString("V!ncent"));
                 Console.Read();
             }
         
